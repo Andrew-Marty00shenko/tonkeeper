@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px 0px 0.25rem;
+  }
+
+  p {
+    text-align: center;
+    max-width: 221px;
+    color: rgb(137, 148, 163);
+    user-select: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.infos {
+  margin-top: 2rem;
+}

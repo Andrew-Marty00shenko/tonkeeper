@@ -1,0 +1,9 @@
+.btn {
+  position: relative;
+  border: 0px;
+  outline: 0px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

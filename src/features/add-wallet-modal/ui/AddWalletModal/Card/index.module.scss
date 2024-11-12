@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 38, 51);
+  margin: 0px 16px 16px;
+  padding: 16px;
+  border-radius: 24px;
+
+  svg {
+    color: rgb(69, 174, 245);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    h4 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    span {
+      color: rgb(137, 148, 163);
+      user-select: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      width: 202px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

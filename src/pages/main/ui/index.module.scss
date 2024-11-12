@@ -1,0 +1,57 @@
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    margin-bottom: 2rem;
+    user-select: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0px;
+
+    span {
+      color: rgb(69, 174, 245);
+    }
+  }
+
+  .info {
+    margin-top: 2rem;
+
+    .infoBlock {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      svg {
+        color: rgb(69, 174, 245);
+      }
+
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        h4 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        p {
+          display: block;
+          color: rgb(137, 148, 163);
+          user-select: none;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
