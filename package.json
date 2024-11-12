@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rhf-bind/form-with-dispatch": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.2",
+    "react-hot-toast": "^2.4.1",
     "react-responsive-modal": "^6.4.2",
     "react-router-dom": "^6.28.0",
     "react-svg": "^16.1.34",

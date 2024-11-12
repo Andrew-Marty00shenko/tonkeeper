@@ -1,0 +1,32 @@
+.inputBlock {
+  position: relative;
+
+  .input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  &.inputFocused .input {
+    padding-top: 30px;
+    border: 1px solid #45aef5;
+  }
+
+  label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:
+      top 0.3s,
+      font-size 0.3s;
+    color: #777;
+  }
+
+  &.inputFocused label {
+    top: 20%;
+    font-size: 12px;
+  }
+}
