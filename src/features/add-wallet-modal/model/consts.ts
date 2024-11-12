@@ -11,7 +11,7 @@ export const INFOS = [
     image: Key,
     title: 'Existing Wallet',
     text: 'Import wallet with a 24 secret recovery words',
-    link: '/existing-wallet',
+    link: '/add-existing-wallet',
   },
   {
     image: Search,
