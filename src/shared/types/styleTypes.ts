@@ -3,4 +3,6 @@ export type Styles = {
   height?: number;
   bg?: 'blue' | 'gray';
   borderRadius?: number;
+  mt?: number;
+  disabled?: boolean;
 };

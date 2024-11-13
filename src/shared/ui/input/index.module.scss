@@ -8,6 +8,12 @@
     border: 1px solid transparent;
     width: 100%;
     background-color: transparent;
+
+    &.inputError {
+      color: rgb(255, 71, 102);
+      border: 1px solid rgb(255, 71, 102) !important;
+      background-color: rgba(255, 71, 102, 0.08) !important;
+    }
   }
 
   &.inputFocused .input {
@@ -24,6 +30,10 @@
       top 0.3s,
       font-size 0.3s;
     color: #777;
+
+    &.error {
+      color: rgb(255, 71, 102);
+    }
   }
 
   &.inputFocused label {

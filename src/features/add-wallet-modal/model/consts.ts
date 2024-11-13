@@ -5,7 +5,7 @@ export const INFOS = [
     image: Plus,
     title: 'New Wallet',
     text: 'Create new wallet',
-    link: '/new-wallet',
+    link: '/new-account',
   },
   {
     image: Key,

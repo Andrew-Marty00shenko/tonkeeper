@@ -1,0 +1,20 @@
+.passwords {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  span {
+    user-select: none;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: rgb(137, 148, 163);
+    font-size: 18px;
+    font-weight: 600;
+
+    &.error {
+      color: rgb(255, 71, 102);
+    }
+  }
+}

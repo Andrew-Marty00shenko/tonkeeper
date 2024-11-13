@@ -17,17 +17,18 @@ interface InputProps extends Styles {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   title?: string;
   register?: UseFormRegisterReturn;
+  error?: boolean;
 }
 
 export const Input = (props: InputProps) => {
-  const { bg, height, width, borderRadius, title, register, name } = props;
+  const { bg, height, width, borderRadius, title, register, name, error } = props;
 
   const buttonStyle: CSSProperties = {
     height: `${height}px`,
     width: width === 'full' ? '100%' : `${width}px`,
     backgroundColor: getBackgroundColor(bg),
     color: 'white',
-    borderRadius: borderRadius,
+    borderRadius: `${borderRadius}px`,
     cursor: 'pointer',
   };
 
@@ -46,18 +47,20 @@ export const Input = (props: InputProps) => {
   };
 
   return (
-    <div className={`${style.inputBlock} ${focused ? style.inputFocused : ''}`}>
+    <div className={`${style.inputBlock} ${focused ? style.inputFocused : ''} ${error ? style.error : ''}`}>
       <input
         {...props}
         {...register}
         name={name}
         id="input"
-        className={style.input}
+        className={`${style.input} ${error ? style.inputError : ''}`}
         style={buttonStyle}
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
-      <label htmlFor="input">{title}</label>
+      <label htmlFor="input" className={error ? style.error : ''}>
+        {title}
+      </label>
     </div>
   );
 };

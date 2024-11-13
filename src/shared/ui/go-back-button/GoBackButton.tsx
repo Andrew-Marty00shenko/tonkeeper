@@ -9,8 +9,12 @@ export const GoBackButton = () => {
   const handleClick = () => {
     switch (pathname) {
       case '/add-existing-wallet':
-      case '/watch-account': {
+      case '/watch-account':
+      case '/generated-phase': {
         return navigate('/');
+      }
+      case '/check-generated-phase': {
+        return navigate('/generated-phase');
       }
     }
   };
