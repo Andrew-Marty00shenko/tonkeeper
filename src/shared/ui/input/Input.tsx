@@ -1,5 +1,5 @@
 import { CSSProperties, useState } from 'react';
-import { useFormContext, UseFormRegisterReturn, useWatch } from 'react-hook-form';
+import { UseFormRegisterReturn, useWatch } from 'react-hook-form';
 
 import { Styles } from '../../types';
 import { getBackgroundColor } from '../../utils';
