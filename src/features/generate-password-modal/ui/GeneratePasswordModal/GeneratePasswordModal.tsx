@@ -1,4 +1,5 @@
 import { Modal } from 'react-responsive-modal';
+import { useNavigate } from 'react-router-dom';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { PasswordsFormState } from '../../model';
@@ -12,7 +13,13 @@ type GeneratePasswordModalProps = { isOpen: boolean; onClose: () => void };
 export const GeneratePasswordModal = ({ isOpen, onClose }: GeneratePasswordModalProps) => {
   const methods = useForm<PasswordsFormState>();
 
-  const onSubmit = () => {};
+  const navigate = useNavigate();
+
+  const onSubmit = () => {
+    localStorage.setItem('isAuth', 'true');
+
+    navigate('/');
+  };
 
   return (
     <FormProvider {...methods}>
