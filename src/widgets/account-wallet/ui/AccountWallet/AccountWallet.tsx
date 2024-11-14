@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { AccountWalletActions } from './AccountWalletActions';
 import { AccountWalletInfo } from './AccountWalletInfo';
+import { AccountWalletTokens } from './AccountWalletTokens';
 import style from './index.module.scss';
 
 import { Dropdown } from '@/entities/account-dropdown';
@@ -24,6 +25,8 @@ export const AccountWallet = () => {
         <AccountWalletInfo />
 
         <AccountWalletActions />
+
+        <AccountWalletTokens />
       </div>
 
       {isOpenAddWallet && <AddWalletModal isOpen={isOpenAddWallet} onClose={() => setIsOpenAddWallet(false)} />}
