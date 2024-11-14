@@ -1,0 +1,31 @@
+.accountWalletAction {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    color: rgb(235, 235, 235);
+    background-color: rgb(29, 38, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      margin-top: 3px;
+    }
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(137, 148, 163);
+  }
+}

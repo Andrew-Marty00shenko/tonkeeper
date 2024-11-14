@@ -49,6 +49,18 @@ export const browserRouter = createBrowserRouter([
             path: '/',
             element: <PrivateMain />,
           },
+          {
+            path: '/history',
+            element: <PrivateMain />,
+          },
+          {
+            path: '/browser',
+            element: <PrivateMain />,
+          },
+          {
+            path: '/settings',
+            element: <PrivateMain />,
+          },
         ],
   },
 ]);

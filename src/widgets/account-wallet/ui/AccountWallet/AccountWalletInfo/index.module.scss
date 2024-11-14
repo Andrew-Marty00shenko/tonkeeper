@@ -1,0 +1,27 @@
+.accountWalletInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  margin-top: 32px;
+
+  .balance {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .wallet {
+    color: rgb(137, 148, 163);
+    user-select: none;
+    display: flex;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

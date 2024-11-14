@@ -1,0 +1,28 @@
+.accountItem {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.25rem;
+  width: 20%;
+
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    &.activeText {
+      color: #45aef5;
+    }
+  }
+
+  .activeSvg {
+    svg {
+      path {
+        fill: #45aef5;
+      }
+    }
+  }
+}
