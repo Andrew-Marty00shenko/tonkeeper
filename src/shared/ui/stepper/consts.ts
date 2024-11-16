@@ -1,4 +1,4 @@
-export const STEP_WIDTH = 380;
+export const STEP_WIDTH = 100;
 
 export const STYLES = {
   root: {
@@ -7,7 +7,7 @@ export const STYLES = {
   },
   container: {
     overflowX: 'hidden',
-    maxWidth: STEP_WIDTH,
+    maxWidth: '100%',
   },
   steps: {
     display: 'inline-flex',
@@ -16,7 +16,7 @@ export const STYLES = {
     textAlign: 'center',
   },
   step: {
-    width: STEP_WIDTH,
+    minWidth: '100%',
   },
   currentIndex: {
     fontWeight: 'bold',

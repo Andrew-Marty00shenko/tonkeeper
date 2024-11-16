@@ -36,7 +36,7 @@ export const Stepper = ({ steps }: StepperProps) => {
           // @ts-ignore
           style={{
             ...STYLES.steps,
-            transform: `translateX(${xTranslate}px)`,
+            transform: `translateX(${xTranslate}%)`,
             height: '100%',
           }}
         >
