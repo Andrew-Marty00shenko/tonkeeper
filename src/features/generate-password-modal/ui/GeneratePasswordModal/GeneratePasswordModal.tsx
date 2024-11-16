@@ -16,9 +16,7 @@ export const GeneratePasswordModal = ({ isOpen, onClose }: GeneratePasswordModal
   const navigate = useNavigate();
 
   const onSubmit = () => {
-    localStorage.setItem('isAuth', 'true');
-
-    navigate('/');
+    navigate('/create-wallet-name');
   };
 
   return (

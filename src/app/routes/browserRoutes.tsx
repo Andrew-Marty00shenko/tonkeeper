@@ -6,6 +6,7 @@ import { Browser, History, Main as PrivateMain, Settings } from '@/pages/private
 import {
   AddExistingWallet,
   CheckGeneratedPhase,
+  CreateWalletName,
   GeneratedPhase,
   Main as PublicMain,
   NewAccount,
@@ -42,6 +43,10 @@ export const browserRouter = createBrowserRouter([
           {
             path: '/check-generated-phase',
             element: <CheckGeneratedPhase />,
+          },
+          {
+            path: '/create-wallet-name',
+            element: <CreateWalletName />,
           },
         ]
       : [
