@@ -57,7 +57,7 @@ export const CreateWalletActions = () => {
         height="280px"
         theme={Theme.DARK}
         className={style.emojies}
-        emojiStyle={EmojiStyle.APPLE}
+        emojiStyle={EmojiStyle.NATIVE}
         style={{ backgroundColor: 'transparent' }}
         allowExpandReactions={false}
         searchDisabled

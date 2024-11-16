@@ -35,5 +35,15 @@
     &:nth-child(3) {
       display: none;
     }
+
+    button {
+      width: 32px;
+      height: 32px;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
   }
 }
