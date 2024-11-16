@@ -1,10 +1,10 @@
-import { CSSProperties, useState } from 'react';
-import { UseFormRegisterReturn, useWatch } from 'react-hook-form';
+import classNames from 'classnames';
+import { UseFormRegisterReturn } from 'react-hook-form';
 
 import { Styles } from '../../types';
-import { getBackgroundColor } from '../../utils';
 
 import style from './index.module.scss';
+import { useInput } from './useInput';
 
 interface InputProps extends Styles {
   name: string;
@@ -18,47 +18,46 @@ interface InputProps extends Styles {
   title?: string;
   register?: UseFormRegisterReturn;
   error?: boolean;
+  dynamicLabel?: boolean;
 }
 
 export const Input = (props: InputProps) => {
-  const { bg, height, width, borderRadius, title, register, name, error } = props;
+  const { register, name, error, title, dynamicLabel = true } = props;
 
-  const buttonStyle: CSSProperties = {
-    height: `${height}px`,
-    width: width === 'full' ? '100%' : `${width}px`,
-    backgroundColor: getBackgroundColor(bg),
-    color: 'white',
-    borderRadius: `${borderRadius}px`,
-    cursor: 'pointer',
-  };
-
-  const [focused, setFocused] = useState(false);
-
-  const fieldValue = useWatch({ name });
-
-  const handleFocus = () => {
-    setFocused(true);
-  };
-
-  const handleBlur = () => {
-    if (!fieldValue) {
-      setFocused(false);
-    }
-  };
+  const { buttonStyle, focused, handleBlur, handleFocus, ref } = useInput({
+    ...props,
+  });
 
   return (
-    <div className={`${style.inputBlock} ${focused ? style.inputFocused : ''} ${error ? style.error : ''}`}>
+    <div
+      className={classNames([style.inputBlock], {
+        [style.inputFocused]: focused,
+        [style.inputFocusedDynamic]: focused && dynamicLabel,
+        [style.error]: error,
+      })}
+      ref={ref}
+      onClick={handleFocus}
+    >
       <input
         {...props}
         {...register}
         name={name}
         id="input"
-        className={`${style.input} ${error ? style.inputError : ''}`}
+        className={classNames([style.input], {
+          [style.withoutDynamicLabel]: !dynamicLabel,
+          [style.inputError]: error,
+        })}
         style={buttonStyle}
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
-      <label htmlFor="input" className={error ? style.error : ''}>
+      <label
+        htmlFor="input"
+        className={classNames({
+          [style.error]: error,
+          [style.dynamicLabel]: dynamicLabel,
+        })}
+      >
         {title}
       </label>
     </div>

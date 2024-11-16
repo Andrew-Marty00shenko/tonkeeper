@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import { Layout } from '../layout';
 
-import { Main as PrivateMain } from '@/pages/private';
+import { Browser, History, Main as PrivateMain, Settings } from '@/pages/private';
 import {
   AddExistingWallet,
   CheckGeneratedPhase,
@@ -51,15 +51,15 @@ export const browserRouter = createBrowserRouter([
           },
           {
             path: '/history',
-            element: <PrivateMain />,
+            element: <History />,
           },
           {
             path: '/browser',
-            element: <PrivateMain />,
+            element: <Browser />,
           },
           {
             path: '/settings',
-            element: <PrivateMain />,
+            element: <Settings />,
           },
         ],
   },

@@ -14,10 +14,20 @@
       border: 1px solid rgb(255, 71, 102) !important;
       background-color: rgba(255, 71, 102, 0.08) !important;
     }
+
+    &.withoutDynamicLabel {
+      padding-left: 30px;
+    }
   }
 
   &.inputFocused .input {
+    padding-left: 30px;
+    border: 1px solid #45aef5;
+  }
+
+  &.inputFocusedDynamic .input {
     padding-top: 30px;
+    padding-left: 10px;
     border: 1px solid #45aef5;
   }
 
@@ -29,14 +39,14 @@
     transition:
       top 0.3s,
       font-size 0.3s;
-    color: #777;
+    color: #bebebe;
 
     &.error {
       color: rgb(255, 71, 102);
     }
   }
 
-  &.inputFocused label {
+  &.inputFocusedDynamic label {
     top: 20%;
     font-size: 12px;
   }

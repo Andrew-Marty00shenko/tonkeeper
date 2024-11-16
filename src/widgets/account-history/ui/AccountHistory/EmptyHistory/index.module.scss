@@ -1,0 +1,32 @@
+.emptyHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .text {
+    text-align: center;
+
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    p {
+      color: rgb(137, 148, 163);
+      margin-bottom: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+  }
+}

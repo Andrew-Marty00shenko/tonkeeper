@@ -31,6 +31,7 @@ export const AddExistingWallet = () => {
                 bg="gray"
                 height={55}
                 type="text"
+                dynamicLabel={false}
               />
             ))}
           </div>

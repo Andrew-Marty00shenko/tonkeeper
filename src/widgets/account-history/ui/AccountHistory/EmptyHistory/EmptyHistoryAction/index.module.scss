@@ -1,0 +1,21 @@
+.action {
+  padding: 0px 16px;
+  background-color: rgb(46, 56, 71);
+  color: rgb(235, 235, 235);
+  display: flex;
+  gap: 4px;
+  width: auto;
+  border-radius: 20px;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+}

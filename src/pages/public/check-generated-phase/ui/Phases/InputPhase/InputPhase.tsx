@@ -20,6 +20,7 @@ export const InputPhase = ({ index }: InputPhaseProps) => {
         height={55}
         type="text"
         register={register(`phase-${index}`)}
+        dynamicLabel={false}
       />
     </>
   );
