@@ -21,19 +21,19 @@
   }
 
   &.inputFocused .input {
-    padding-left: 30px;
+    padding-left: 50px;
     border: 1px solid #45aef5;
   }
 
   &.inputFocusedDynamic .input {
     padding-top: 30px;
-    padding-left: 10px;
+    padding-left: 20px;
     border: 1px solid #45aef5;
   }
 
   label {
     position: absolute;
-    left: 10px;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
     transition:
@@ -43,6 +43,10 @@
 
     &.error {
       color: rgb(255, 71, 102);
+    }
+
+    &.dynamicLabel {
+      left: 20px;
     }
   }
 

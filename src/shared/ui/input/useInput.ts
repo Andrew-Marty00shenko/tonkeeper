@@ -14,7 +14,7 @@ export const useInput = (props: UseInputProps) => {
 
   const ref = useRef<Nullable<HTMLDivElement>>(null);
 
-  const buttonStyle: CSSProperties = {
+  const inputStyle: CSSProperties = {
     height: `${height}px`,
     width: width === 'full' ? '100%' : `${width}px`,
     backgroundColor: getBackgroundColor(bg),
@@ -42,7 +42,7 @@ export const useInput = (props: UseInputProps) => {
   return {
     focused,
     ref,
-    buttonStyle,
+    inputStyle,
     handleBlur,
     handleFocus,
   };

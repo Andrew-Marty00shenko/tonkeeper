@@ -24,7 +24,7 @@ interface InputProps extends Styles {
 export const Input = (props: InputProps) => {
   const { register, name, error, title, dynamicLabel = true } = props;
 
-  const { buttonStyle, focused, handleBlur, handleFocus, ref } = useInput({
+  const { inputStyle, focused, handleBlur, handleFocus, ref } = useInput({
     ...props,
   });
 
@@ -47,7 +47,7 @@ export const Input = (props: InputProps) => {
           [style.withoutDynamicLabel]: !dynamicLabel,
           [style.inputError]: error,
         })}
-        style={buttonStyle}
+        style={inputStyle}
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
