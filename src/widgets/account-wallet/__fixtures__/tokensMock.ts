@@ -2,7 +2,7 @@ import { Token } from '../model';
 
 export const TOKENS_MOCK: Token[] = [
   {
-    image: 'some image',
+    image: 'https://wallet.tonkeeper.com/img/toncoin.svg',
     name: 'name',
     exchangeRate: {
       rate: '5.35',
