@@ -13,7 +13,7 @@ export const SettingsBlock = ({ settings }: SettingsBlockProps) => {
         <div key={index} className={style.item}>
           <p>{name}</p>
 
-          {image.includes('src') ? <ReactSVG src={image} /> : <span>{image}</span>}
+          {image.includes('svg') ? <ReactSVG src={image} /> : <span>{image}</span>}
         </div>
       ))}
     </div>
